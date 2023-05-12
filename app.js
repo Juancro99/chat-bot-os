@@ -134,8 +134,9 @@ const tiempoApagado = 3600000; // tiempo en milisegundos (5 minutos en este ejem
             const id = ctx.from
 
             const listMessage = {
-                "type": "list",
-                "header": {
+                "interactive":{
+                 "type": "list",
+                 "header": {
                     "type": "text",
                     "text": "*¡Hola!* Bienvenid@👋🏻"
                 },
@@ -176,7 +177,7 @@ const tiempoApagado = 3600000; // tiempo en milisegundos (5 minutos en este ejem
                         },
                     ]
                 }
-            }
+            }}
             const meta = await provider
             await meta.sendLists(id, listMessage)
             return
