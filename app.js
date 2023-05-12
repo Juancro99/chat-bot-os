@@ -134,6 +134,7 @@ const tiempoApagado = 3600000; // tiempo en milisegundos (5 minutos en este ejem
             const id = ctx.from
 
             const listMessage = {
+                "type": "list",
                 "header": {
                     "type": "text",
                     "text": "*¡Hola!* Bienvenid@👋🏻"
